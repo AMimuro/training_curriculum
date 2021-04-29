@@ -3,7 +3,7 @@ class CalendarsController < ApplicationController
   # １週間のカレンダーと予定が表示されるページ
   def index
 
-    getweek
+    get_week
 
     @plan = Plan.new
   end
@@ -22,7 +22,7 @@ class CalendarsController < ApplicationController
 
   
   
-  def getweek
+  def get_week
 
     wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
 
